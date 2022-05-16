@@ -1,10 +1,13 @@
-let suma,número,resultado:number;
-suma = 0;
+var número1: number = 0;
+var número2: number = 0;
+var resultado: number = 0;
+// var suma: number = 0;
 
-for(let i: number=1; i<=3; i++) {
-i=prompt("Ingrese un número entero:");
-número = Number(prompt("Primer número ingresado: " + i + ". Ahora ingrese el segundo número:"));
-suma += número;
+número1 = Number(prompt("Ingrese un número entero"));
+número2 = Number(prompt("Ingrese otro número entero"));
+
+for (número1 = 0; número1 <= número2; número1++) {
+  número1 += número2;
+  resultado = número1 + número2;
 }
-resultado = suma
-console.log("La suma de los números es igual a: ", resultado);
+console.log("La suma entre los números es: ", resultado);
